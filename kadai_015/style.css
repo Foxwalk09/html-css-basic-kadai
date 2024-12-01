@@ -7,7 +7,7 @@ body {
 
 /* h1のスタイル */
 h1 {
-    font-family: 'Josefin Sans', sans-serif; /* 指定通りJosefin Sansを適用 */
+    font-family: 'Josefin Sans', sans-serif; /* Josefin Sansを適用 */
     font-size: 2rem; /* ルート要素の2倍 */
     letter-spacing: 0.24rem; /* 文字間を1.2倍に設定 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 影の設定 */
@@ -16,20 +16,20 @@ h1 {
 
 /* 色の設定 */
 .skyblue {
-    color: skyblue; /* スカイブルー */
+    color: skyblue; 
 }
 
 .pink {
-    color: rgb(255, 192, 203); /* ピンク */
+    color: rgb(255, 192, 203); 
 }
 
 /* 見出しの色設定（#basic内のみ） */
 #basic h2.pink {
-    color: rgb(255, 192, 203); /* ピンク */
+    color: rgb(255, 192, 203);
 }
 
 #basic h2.skyblue {
-    color: skyblue; /* スカイブルー */
+    color: skyblue;
 }
 
 /* p要素の太字指定: 子孫要素を使って指定 */
