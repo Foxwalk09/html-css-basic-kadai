@@ -1,0 +1,42 @@
+/* グローバル設定 */
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Josefin Sans', "Arial", "Meiryo", sans-serif;  
+}
+
+/* テキストの中央寄せ */
+h1, h2, p {
+    text-align: center;
+}
+
+/* 色の設定 */
+.skyblue {
+    color: skyblue;
+}
+
+.pink {
+    color: rgb(255, 192, 203);
+}
+
+/* h1の装飾 */
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    border-bottom: 3px solid rgb(115, 115, 114); 
+}
+
+/* #basicの装飾 */
+#basic {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* 太字の設定 */
+#basic .highlight {
+    font-weight: bold;
+}
