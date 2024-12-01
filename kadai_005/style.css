@@ -1,0 +1,50 @@
+/* フォントの設定 */
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    font-size: 20px; /* ルート要素のフォントサイズ */
+    text-align: center; /* 全体を中央寄せ */
+}
+
+/* h1のスタイル */
+h1 {
+    font-family: 'Josefin Sans', sans-serif; /* Josefin Sansを適用 */
+    font-size: 2rem; /* ルート要素の2倍 */
+    letter-spacing: 0.24rem; /* 文字間を1.2倍に設定 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 影の設定 */
+    border-bottom: 3px solid rgb(115, 115, 114); /* 下線 */
+}
+
+/* 色の設定 */
+.skyblue {
+    color: skyblue; 
+}
+
+.pink {
+    color: rgb(255, 192, 203); 
+}
+
+/* 見出しの色設定（#basic内のみ） */
+#basic h2.pink {
+    color: rgb(255, 192, 203);
+}
+
+#basic h2.skyblue {
+    color: skyblue;
+}
+
+/* p要素の太字指定: 子孫要素を使って指定 */
+#basic p {
+    font-weight: normal; /* デフォルトの文字の重さ */
+}
+
+#basic h2.pink + p,  /* ピンクの見出し直後のp */
+#basic h2.skyblue + p { /* スカイブルーの見出し直後のp */
+    font-weight: bold; /* これらのpタグにのみ太字を適用 */
+}
+
+/* #basic の装飾 */
+#basic {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
