@@ -1,0 +1,89 @@
+@media (max-width: 768px) {
+    h2 {
+      font-size: 30px; /* h2のフォントサイズを30pxに */
+    }
+  
+    p {
+      font-size: 25px; /* pのフォントサイズを25pxに */
+    }
+  
+    #parent {
+      flex-direction: column; /* Flexコンテナの要素を縦に並べる */
+      align-items: center; /* 必要に応じて中央揃え */
+    }
+  }
+  
+h1, p, body {
+    margin: 0;
+}
+p, a {
+    font-size: 20px;
+}
+header {
+ margin-bottom: 20px;
+ background-color: rgb(244, 79, 79);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+h1{
+ background-color: rgb(244,79,79);
+ color: rgb(255,255,255);
+}
+main{
+    margin: 10px;
+}
+#parent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contents {
+    border: 3px solid rgb(238, 204, 204); /* 線のスタイル */
+    flex-basis: 25%; /* 幅を親要素の25%に設定 */
+    padding: 10px 15px; /* 内側の余白：上下10px、左右15px */
+    margin: 20px 0; /* 外側の余白：上下20px、左右0 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 子要素を中央揃え */
+    text-align: center; /* テキストを中央揃え */
+  }
+  
+  .contents h2 {
+    font-size: 25px; /* フォントサイズ */
+    border-bottom: 3px dotted rgb(236, 122, 122); /* 下線（点線） */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* ●とテキストの間隔 */
+  }
+  
+  .contents h2::before {
+    content: "●";
+    color: rgb(239, 111, 139); /* ●の色 */
+  }
+  .contents p:nth-of-type(2)::first-letter {
+    font-weight: bold; /* 太字 */
+    color: rgb(97, 206, 249); /* 文字色 */
+  }
+
+  footer {
+    background-color: rgb(244, 79, 79); /* 背景色 */
+    display: flex;
+    justify-content: center; /* 中身の要素を中央揃え */
+    align-items: center;
+    text-align: center; /* テキストを中央揃え */
+    padding: 10px; /* 適度な余白 */
+  }
+  
+  footer a {
+    color: rgb(255, 255, 255); /* リンクの通常時の文字色 */
+    text-decoration: none; /* 下線を消す（必要に応じて） */
+  }
+  
+  footer a:visited {
+    color: rgb(193, 234, 251); /* 訪問済みリンクの文字色 */
+  }
+  
+  footer a:hover {
+    color: rgb(245, 178, 168); /* ホバー時の文字色 */
+  }
+    
